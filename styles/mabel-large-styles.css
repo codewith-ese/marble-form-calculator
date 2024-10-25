@@ -1,0 +1,117 @@
+/* LARGE VIEW NAVIGATION STARTS HERE  *****/
+@media (min-width: 37.5em) {
+
+	h1 {
+		font-size: 2rem;
+		margin-left: 0;
+		text-align: center;
+	}
+
+	h2 {
+		font-size: 1.7rem;
+		text-align: center;
+	}
+
+	#menu {
+		display: none; /* hide hamburger button */
+	}
+
+	.navigation {
+		flex-direction: row;
+        justify-content: space-evenly;
+        /* justify-content: space-around; */
+	}
+
+	.navigation a {
+		display: block;
+		flex: 1 1 100%;
+        padding: .2rem;
+	}
+
+
+    nav {
+        background-color: #e3e8e6e2;
+        display: block;
+        flex-direction: column;
+        margin-right: 2px;
+        /* width: 700px; */
+        align-items: center;
+    }
+    
+    nav a {
+        display: block;
+        color: #1f386e;
+        text-align: center;
+        padding: .1rem;
+        text-decoration: none;
+    }
+
+}
+
+
+
+/* @media (min-width: 769px)  */
+@media (min-width: 541px) {
+	header {
+		display: flex;
+		align-items: center;
+		justify-content:space-around;
+        padding: 0px;
+
+	}
+    header {
+        position: fixed;
+        right: 0;
+        left: 0;
+        z-index: 1;
+        
+    }
+    header h1 {
+        font-size: 1.6rem;
+        padding: .8rem;
+        line-height: 1.8rem;
+    }
+    header h2 {
+        font-size: 1rem;
+    }
+
+
+	nav {
+		
+        background-color: #e3e8e6e2;
+        display: flex; 
+        flex-direction: column;
+        justify-content:space-around;
+        margin-right: 10px;
+        width: 600px;
+        align-items: center;
+	}
+	nav a {
+		flex: 1 1 100%;
+	}
+    /* FORM STYLS STARTS HERE  */
+    .container {
+        display: block;
+        margin: auto;
+        max-width: 600px;
+        padding-top: 5rem;
+       
+    }
+    .container h1 {
+        padding: none;
+        font-size: 1.8rem;
+    }
+    .container h2 {
+        /* padding: none; */
+        font-size: 1.3rem;
+    }
+    .container h1{
+        background-color: rgb(249, 246, 241);
+        color: #1bed4c;
+        text-shadow: 1px 1px 2px rgb(0, 0, 0);
+        border-radius: 8px 25px 8px 25px;
+        box-shadow: 1px 1px 2px black;
+        margin: 1rem;
+    }
+
+}
