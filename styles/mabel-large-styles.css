@@ -90,6 +90,13 @@
 		flex: 1 1 100%;
 	}
     /* FORM STYLS STARTS HERE  */
+    .form-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        max-width: 900px;
+        margin: auto;  
+    }
     .container {
         display: block;
         margin: auto;
@@ -99,19 +106,18 @@
     }
     .container h1 {
         padding: none;
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
     .container h2 {
-        /* padding: none; */
         font-size: 1.3rem;
     }
-    .container h1{
+    /* .container h1{
         background-color: rgb(249, 246, 241);
         color: #1bed4c;
         text-shadow: 1px 1px 2px rgb(0, 0, 0);
         border-radius: 8px 25px 8px 25px;
         box-shadow: 1px 1px 2px black;
         margin: 1rem;
-    }
+    } */
 
 }

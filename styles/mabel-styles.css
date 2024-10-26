@@ -146,15 +146,32 @@ main {
 
 
 /* FORM STYLS STARTS HERE  */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    max-width: 900px;
+    margin: auto;  
+}
+
 .container {
     display: block;
     margin: auto;
     max-width: 500px;
     padding-top: 2px;
-
+}
+.container h1{
+    background-color: #f9f6f1;
+    color: #1bed4c;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    box-shadow: 1px 1px 2px black;
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 1.4rem;
 }
 
-.container h1, h2 {
+
+.container h2 {
     /* text-align: center; */
     padding: 1rem 1rem;
 }
@@ -171,7 +188,7 @@ form {
 
 label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
     font-weight: bold;
 }
 
@@ -179,7 +196,7 @@ input[type="text"],
 input[type="number"] {
     width: 100%;
     padding: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 2px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
@@ -226,9 +243,10 @@ button:hover {
 .result-class {
     background-color: #ddd;
     box-shadow: 1px 2px 3px black;
-    /* border-radius: 50px 50px 4px 4px ; */
     margin-bottom: 2rem;
-    padding: 1rem 1rem;  
+    padding: 1rem 1rem;
+    width: 375px;
+    max-width: 400px;  
 }
 
 
