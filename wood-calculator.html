@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content=" Mabel calculator project, featuring HTML, CSS, and JavaScript, by Monday Erirore Eseinone, an online student at Brigham Young University.">
+    <meta name="description"
+        content=" Mabel calculator project, featuring HTML, CSS, and JavaScript, by Monday Erirore Eseinone, an online student at Brigham Young University.">
     <meta name="author" content="Monday Erirore Eseinone">
     <title>Mabel Calculate</title>
-    
+
     <script src="scripts/nav.js" defer></script>
-    <script src="scripts/mabel-scripts.js" defer></script>
-    <link  rel="stylesheet" href="styles/mabel-styles.css">
-    <link  rel="stylesheet" href="styles/mabel-large-styles.css">
+    <script src="scripts/wood-scripts.js" defer></script>
+    <link rel="stylesheet" href="styles/mabel-styles.css">
+    <link rel="stylesheet" href="styles/mabel-large-styles.css">
 
 </head>
+
 <body>
     <header>
-        <h1>Marble Cost Estimator</h1> 
+        <h1>Plywood Cost Estimator</h1>
         <!-- <h2> Call Today <i>+234-807-523-6542</i></h2> -->
         <button type="button" id="menu"></button>
         <nav class="navigation">
@@ -27,29 +30,29 @@
     <main>
         <div class="form-grid">
             <div class="container">
-                <h1>Enter the measurements of your marble in the form below. ⬇️</h1>
-                <form id="marbleForm" class="mf1">
+                <h1>Enter wood Measurement in the form below ⬇️</h1>
+                <form id="woodForm" class="mf1">
                     <label for="projectName">Project Name:</label>
                     <input type="text" id="projectName" required>
                     <br><br>
-                    
+
                     <!-- <label for="lastName">Last Name:</label>
                     <input type="text" id="lastName" required>
                     <br><br> -->
-                    
-                    <label for="marblePrice">Price per square meter:</label>
-                    <input type="number" id="marblePrice" required>
+
+                    <label for="boardprice">Price for One board:</label>
+                    <input type="number" id="boardprice" required>
                     <br><br>
-        
+
                     <h2>Measurements</h2>
                     <label for="length">Length (m):</label>
                     <input type="number" id="length" required>
                     <br><br>
-    
+
                     <label for="width">Width (m):</label>
                     <input type="number" id="width" required>
                     <br><br>
-                    
+
                     <!-- <button type="button" id="addMeasurement">Add Measurement</button> -->
                     <button type="submit">Calculate Total Cost</button>
                 </form>
@@ -59,7 +62,7 @@
                     <h2>Results</h2>
                     <div id="namedemo">Project Name Will Show here</div>
                     <div id="total">00.0</div>
-                    <div id="pricedemo">00.0</div>
+                    <div id="boardPricedemo">00.0</div>
                     <div id="date">Date</div>
                 </div>
             </div>
@@ -67,10 +70,11 @@
 
     </main>
     <footer>
-        <p id="year"></p> 
+        <p id="year"></p>
         <p id="date-modified"></p>
     </footer>
 
 
 </body>
+
 </html>

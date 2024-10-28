@@ -167,7 +167,7 @@ main {
     box-shadow: 1px 1px 2px black;
     margin: 1rem;
     padding: 1rem;
-    font-size: 1.4rem;
+    font-size: 1.6em;
 }
 
 
@@ -220,7 +220,10 @@ button:hover {
     color: wheat;
 }
 
-#namedemo, #total, #pricedemo, #date{
+#namedemo, #total, #pricedemo, #date,
+#materialslist, #tableTop, #tableLegs,
+#boardPricedemo, #tableConnL, #tableConnS
+{
     background: #fff;
     padding: 10px;
     border-radius: 5px;
@@ -235,7 +238,13 @@ button:hover {
     font-weight: bold;
 }
 
-#total, #pricedemo, #date{
+#total,
+#pricedemo, #date,
+#materialslist, 
+#tableTop, #tableLegs,
+#boardPricedemo,  
+#tableConnL, #tableConnS
+{
     color: #555;
 }
 
@@ -280,7 +289,20 @@ button:hover {
     font-size: 1rem;
     line-height: 1.2rem;
 }
+/* 
+#printResultsButton div {
+    background-color: #5e09de;
 
+} */
+
+/* 
+h2 {
+    color: #333;
+} */
+
+div {
+    margin-bottom: 10px;
+}
 
 
 

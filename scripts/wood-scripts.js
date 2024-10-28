@@ -1,10 +1,11 @@
 
-document.getElementById("marbleForm").addEventListener("submit", function(event) {
+document.getElementById("woodForm").addEventListener("submit", function(event) {
     event.preventDefault(); // Prevent form from submitting
 
     // Get user inputs
     let projectName = document.getElementById("projectName").value;
-    let MarblePrice = parseFloat(document.getElementById("marblePrice").value);
+    let BoardPrice = parseFloat(document.getElementById("boardprice").value);
+
 
     // Calculate total area
     let material = [];
@@ -29,10 +30,10 @@ document.getElementById("marbleForm").addEventListener("submit", function(event)
         widthM = parseFloat(prompt("Type width:"));
     }
 
-    let oneSqm = 100 * 100; // 1 square meter in square centimeters
-    let totalSq = totalArea / oneSqm;
-    let roundTotal = totalSq.toFixed(2);
-    let totalCost = roundTotal * MarblePrice;
+    let oneBoard = 240 * 120; // 1 complete size of board in cm2
+    let totalBoard = totalArea / oneBoard;
+    let roundTotal = totalBoard.toFixed(2);
+    let boardTotalCal = roundTotal * BoardPrice;
 
     // Get current date
     let currentDate = new Date();
@@ -41,7 +42,7 @@ document.getElementById("marbleForm").addEventListener("submit", function(event)
     // Display results
     document.getElementById("namedemo").innerHTML = 
         "Project Name: ➡️ " +  " " + projectName.charAt(0).toUpperCase() + projectName.slice(1);
-    document.getElementById("total").innerHTML = "Total Estimate is ➡️ : " + roundTotal + " squre meter";
-    document.getElementById("pricedemo").innerHTML = "Total Cost of Marble is ➡️ #" + totalCost + "  ";
+    document.getElementById("total").innerHTML = "Total Estimate is ➡️ : " + roundTotal + " Boads";
+    document.getElementById("boardPricedemo").innerHTML = "Total Cost of Board is ➡️ " + boardTotalCal.toFixed(2);
     document.getElementById("date").innerHTML = "Date: " + formattedDate; // Display the date
 });
