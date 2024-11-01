@@ -131,6 +131,10 @@
     .slider-container {
         padding: 0;
     }
+    .slider-container img {
+        width: 100%;
+        height: auto;
+    }
     article {
         display: block;
         max-width: fit-content;

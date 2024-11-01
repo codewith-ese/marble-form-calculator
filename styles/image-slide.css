@@ -21,8 +21,8 @@
   }
   
   .slide img {
-      width: auto;
-      height: 200px;
+      width: 100%;
+      height: auto;
   }
   
   /* Add a pointer when hovering over the thumbnail images */
