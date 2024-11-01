@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog about the Marble Cost Estimator project, featuring tips and insights.">
+    <meta name="author" content="Monday Erirore Eseinone">
+    <title>Blog - Marble Cost Estimator</title>
+    
+    <link rel="stylesheet" href="styles/blog-styles.css"> 
+    <link rel="stylesheet" href="styles/mabel-styles.css">
+    <link rel="stylesheet" href="styles/mabel-large-styles.css">
+    <link rel="stylesheet" href="styles/image-slide.css">
+    
+   
+    <script src="scripts/nav.js" defer></script>
+    <script src="scripts/mabel-scripts.js" defer></script>
+    <script src="scripts/image-slide.js" defer></script>
+    <script src="scripts/blog-comment.js" defer></script>
+    <script src="scripts/get-date.js" defer></script>
+
+
+
+</head>
+<body>
+    <header>
+        <h1>Marble Cost Estimator Blog</h1>
+        <button type="button" id="menu"></button>
+        <nav class="navigation">
+            <a href="index.html" class="active">Home</a>
+            <a href="wood-calculator.html">Wood</a>
+            <a href="table-cal.html">Table Calculate</a>
+            <a href="blog.html">Blog</a>
+        </nav>
+    </header>
+    <main>
+        <div class="content-container">
+            <article>
+                <div class="article-content ">
+                    <h2>Understanding Marble Cost Estimation</h2>
+                    <p>Welcome to our blog! Here, we will dive deep into how to effectively estimate the cost of marble for your projects. Whether you are renovating your home or working on a construction project, understanding the cost of materials is crucial.</p>
+                    <p>In this post, we will cover:</p>
+                    <ul>
+                        <li>Factors influencing marble prices</li>
+                        <li>How to measure marble accurately</li>
+                        <li>Tips for getting the best deals on marble</li>
+                    </ul>
+                    <h3>Factors Influencing Marble Prices</h3>
+                    <p>Marble prices can vary significantly based on quality, origin, and market demand. It's essential to do your research and understand what affects the pricing in your area.</p>
+                    <h3>How to Measure Marble Accurately</h3>
+                    <p>When measuring for marble, ensure you get precise dimensions to avoid over-ordering or under-ordering. Our Marble Cost Estimator tool can help you with this!</p>
+                    <h3>Tips for Getting the Best Deals</h3>
+                    <p>Always compare prices from different suppliers and look for discounts or bulk purchase deals. Timing your purchase can also lead to significant savings.</p>
+                </div>
+            </article>
+
+            <aside class="sidebar">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search..." />
+                    <button>Search</button>
+                </div>
+                <h3>Recent Posts</h3>
+                <ul>
+                    <li><a href="#">Post 1: How to Choose the Right Marble</a></li>
+                    <li><a href="#">Post 2: Top 5 Marble Trends in 2023</a></li>
+                    <li><a href="#">Post 3: Maintenance Tips for Marble Surfaces</a></li>
+                </ul>
+                <h3>Categories</h3>
+
+                <ul>
+                    <li><a href="#">Installation</a></li>
+                    <li><a href="#">Maintenance</a></li>
+                    <li><a href="#">Design Ideas</a></li>
+                </ul>
+                <h3>Tags</h3>
+                <ul>
+                    <li><a href="#">Marble</a></li>
+                    <li><a href="#">Cost Estimation</a></li>
+                    <li><a href="#">Home Improvement</a></li>
+                </ul>
+            </aside>
+        </div>
+
+        <section>
+            <div class="display-slid-content">
+                <div class="image-slider">
+
+                    <h2 style="text-align:center">Slideshow Gallery</h2>
+                    <div class="slider-container">
+                      <div class="slide">
+                        <div class="numbertext">1 / 6</div>
+                        <img src="images/img_woods.jpg" style="width:100%">
+                      </div>
+                    
+                      <div class="slide">
+                        <div class="numbertext">2 / 6</div>
+                        <img src="images/img_woods2.jpg" style="width:100%">
+                      </div>
+                    
+                      <div class="slide">
+                        <div class="numbertext">3 / 6</div>
+                        <img src="images/img_woods3.jpg" style="width:100%">
+                      </div>
+                        
+                      <div class="slide">
+                        <div class="numbertext">4 / 6</div>
+                        <img src="images/img_woods4.jpg" style="width:100%">
+                      </div>
+                    
+                      <div class="slide">
+                        <div class="numbertext">5 / 6</div>
+                        <img src="images/img_woods5.jpg" style="width:100%">
+                      </div>
+                        
+                      <div class="slide">
+                        <div class="numbertext">6 / 6</div>
+                        <img src="images/img_woods6.jpg" style="width:100%">
+                      </div>
+                        
+                      <a class="prev" onclick="changeSlide(-1)">❮</a>
+                      <a class="next" onclick="changeSlide(1)">❯</a>
+                    
+                      <div class="caption-container">
+                        <p id="caption"></p>
+                      </div>
+                    
+                      <div class="row">
+                        <div class="column">
+                          <img class="thumbnail cursor" src="images/img_woods.jpg" style="width:100%" onclick="setCurrentSlide(1)" alt="The Woods" loading="lazy">
+                        </div>
+                        <div class="column">
+                          <img class="thumbnail cursor" src="images/img_woods2.jpg" style="width:100%" onclick="setCurrentSlide(2)" alt="Cinque Terre" loading="lazy">
+                        </div>
+                        <div class="column">
+                          <img class="thumbnail cursor" src="images/img_woods3.jpg" style="width:100%" onclick="setCurrentSlide(3)" alt="Mountains and fjords" loading="lazy">
+                        </div>
+                        <div class="column">
+                          <img class="thumbnail cursor" src="images/img_woods4.jpg" style="width:100%" onclick="setCurrentSlide(4)" alt="Northern Lights" loading="lazy">
+                        </div>
+                        <div class="column">
+                          <img class="thumbnail cursor" src="images/img_woods5.jpg" style="width:100%" onclick="setCurrentSlide(5)" alt="Nature and sunrise" loading="lazy">
+                        </div>    
+                        <div class="column">
+                          <img class="thumbnail cursor" src="images/img_woods6.jpg" style="width:100%" onclick="setCurrentSlide(6)" alt="Snowy Mountains" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="social-link">
+                <h2>Social links </h2>
+                <ul>
+                    <li> Facebook </li>
+                    <li> Instagram </li>
+                    <li> Twiter </li>
+                    <li> Linkdin </li>
+                </ul>
+            </div>
+
+        </section>
+
+        <section class="comments-section">
+            <h2>Comments</h2>
+            <form onsubmit="submitComment(event)">
+                <textarea id="commentInput" placeholder="Leave a comment..." required></textarea>
+                <button type="submit">Submit Comment</button>
+            </form>
+            <div id="commentDisplay"></div>
+        </section>
+    </main>
+    <footer>
+        <p id="year"></p> 
+        <p id="date-modified"></p>
+    </footer>
+</body>
+</html>
